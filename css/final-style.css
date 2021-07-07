@@ -1,0 +1,192 @@
+body {
+    font-family: 'merriweatherlight','Times New Roman',serif !important;
+    color: #333;
+}
+
+.heading {
+    height: 46px;
+    background-color: rgb(18, 47, 83);
+    color: white;
+    padding: 6px 0px 4px 15px;
+    margin: -8px;
+    font-size: 26px;
+    position: relative;
+}
+
+.head-a {
+    display: inline-block;
+    right: 108px;
+    top: 12px;
+    text-align: right;
+    font-size: 72%;
+    width: 75%;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
+.envelope-size {
+    font-size:32px;
+    color: white;
+}
+
+.nav-bar {
+    background-color:rgb(18, 47, 83);
+    position: relative; 
+    margin: -8px;
+    top: -13px;
+}
+
+.sticky-div {
+    color: blue;
+    background-color: white;
+    font-size: 18px;
+    position: -webkit-sticky;
+    position: sticky;
+    
+}
+
+.sticky-list { 
+    position: relative;
+    top:25px;
+    text-align: right;
+    right: 60px;
+    height: 70px;
+    list-style-type : none;
+}
+
+.sticky-list-item  {
+    display: inline;   
+}
+
+.list-a {
+    top: 12px;
+    text-align: right;
+    font-size: 18px;
+    width: 75%;
+    color: rgb(18, 47, 83);
+    text-decoration: none;
+}
+
+.hero-carosol {
+    position: relative;
+    background-color: rgb(18, 47, 83);
+    width: 87%;
+    margin: 0px auto;   
+}
+
+.marquee-img {
+    margin-top: 40px;
+    height: auto;  
+}
+
+.marquee-text {
+    color: white;
+    font-size: large;
+}
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+
+p {
+    font-size: xx-large; 
+    color: white;
+    position: absolute;
+    background-color: rgb(97, 112, 75);
+    
+    left:46%;
+
+}
+
+.research-container {
+    background-color: rgb(97, 112, 75);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: -9px;
+    padding: 100px 70px 40px 70px;
+    
+}
+.flex-child {
+    width: 1000px;
+    height: 400px;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+    display: relative;
+    
+}
+
+.research {
+    width: 284px;
+    height: 200px;
+    margin: -5px;
+}
+
+.research:hover {
+    position: relative;
+    opacity: 0.5;
+    width: 295px;
+    height: 210px ;
+}
+
+.flex-child > p {
+    display: inline;
+    position: static;
+    font-size: 24px;
+    background-color: white;
+    color: black;
+
+    
+}
+
+.flex-child > p::first-line {
+    font-weight: 300px;
+}
+
+h2 {
+    font-size: xx-large;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 25px;
+    
+}
+
+iframe {
+    display: inline-block;
+    align-content: center;
+    width: 90%;
+    margin: 30px 70px;
+}
+
+.news {
+    width: 100px;
+    height: 100px;
+}
+footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: -9px;
+    padding: 100px 70px 40px 70px;
+    color: blue;
+    justify-content: space-around;
+}
+.footer-list-style {
+    list-style: none;
+}
+
+@media screen and (max-width : 768px) {
+    .responsive-div {
+        width: 90%;
+
+    }
+    
+    .research-container {
+        flex-flow: column;
+        padding: 25px;
+    }
+}
