@@ -1,0 +1,51 @@
+@font-face {
+  font-family: poppins-bold;
+  src: url(Poppins/Poppins-BoldItalic.ttf);
+}
+
+.navbar-brand {
+  font-family: poppins-bold;
+  font-size: 35px;
+  text-decoration: none;
+  color: #012970;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+#half-div {
+  min-height: 340px;
+}
+
+#half-div .even-size {
+  height: 110px;
+}
+
+.footer-bg {
+  background-image: url(images/footer-bg.png);
+  background-size: cover;
+}
+
+.head-font {
+  color: #012970;
+  font-weight: 500;
+  font-size: xx-large;
+}
+
+.sub-head-font {
+  color: #012970;
+  font-weight: 500;
+  font-size: large;
+}
+
+.sub-head-font-2 {
+  color: #012970;
+  font-weight: 500;
+  font-size: x-large;
+}
+
+.icon-smile {
+  font-size: 80px;
+}
+/*# sourceMappingURL=style.css.map */
