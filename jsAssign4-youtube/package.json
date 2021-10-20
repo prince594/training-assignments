@@ -1,0 +1,14 @@
+{
+  "name": "jsassign4-youtube",
+  "version": "1.0.0",
+  "description": "To show videos from youtube api V3",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prince",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.1.0"
+  }
+}
