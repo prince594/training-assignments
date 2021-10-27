@@ -1,11 +1,16 @@
 import User from "../models/user";
 
+import helper from "../helper/user";
+
 const postUser = async (userData: any) => {
   try {
     const post = new User(userData);
     const savedPost = await post.save();
-    return savedPost;
-  } catch (err: any) {
+    // To send Welcome mail
+    helper.welcomeEmail(savedPost);
+    return savedPost
+}
+  catch (err: any) {
     return err;
   }
 };

@@ -5,8 +5,8 @@ import route from "../middlewares/routesAuth";
 const router = express.Router();
 
 router
-  .get("/", route.protect, controller.getBooks)
-  .get("/:bookId", route.protect, controller.getBooks)
+  .get("/", controller.getBooks)
+  .get("/:bookId", controller.getBooks)
 
   .post("/", route.protect, controller.createBooks)
 

@@ -2,13 +2,12 @@ import Book from "../models/books";
 /* GET */
 const finder = async (bookId: any) => {
   try {
-    if (!bookId) {
-      const results = await Book.find().exec();
-      return results;
-    } else {
-      const results = await Book.findById(bookId);
-      return results;
+    const query: any = {};
+    if(bookId) {
+      query['_id'] = bookId;
     }
+    const results = await Book.find(query).exec();
+    return results;
   } catch (error: any) {
     return error;
   }

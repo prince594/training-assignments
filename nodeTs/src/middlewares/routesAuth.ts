@@ -1,6 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import jwt from "jsonwebtoken";
 import config from "../config/config";
+import constants from "../config/constants";
 
 const protect = (req: any, res: Response, next: NextFunction) => {
   // Receiving Token
@@ -14,7 +15,7 @@ const protect = (req: any, res: Response, next: NextFunction) => {
     }
     if (!token) {
       res.send({
-        message: "You are not loggedin! Please login to get access",
+        message: constants.loginError,
       });
     }
     // Verification of token
@@ -22,7 +23,7 @@ const protect = (req: any, res: Response, next: NextFunction) => {
       if (err) {
         return res.send({
           err,
-          message: "Access Denied! Unauthorized User",
+          message: constants.verifyError,
         });
       } else {
         console.log(user);
